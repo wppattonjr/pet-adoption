@@ -5,42 +5,42 @@ const pets  = [
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Zipper.jpg",
         name: "Zipper",
         color: "brown",
-        specialSkill: "stealing socks",
+        specialSkill: "stealing socks Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Dog",
     },
     {
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Apollo.jpg",
         name: "Apollo",
         color: "brown and white",
-        specialSkill: "chillaxin",
+        specialSkill: "chillaxin Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Boxer Dog",
     },
     {
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Gandolf.jpg",
         name: "Gandolf",
         color: "grey",
-        specialSkill: "magic",
+        specialSkill: "magic Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Cat",
     },
     {
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Scabbers.jpg",
         name: "Scabbers",
         color: "brownish",
-        specialSkill: "turning human",
+        specialSkill: "turning human Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Rat",
     },
     {
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Smeagol.jpg",
         name: "Smeagol",
         color: "grey-ish",
-        specialSkill: "directions",
+        specialSkill: "directions Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Ferret",
     },
     {
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Hedwig.jpg",
         name: "Hedwig",
         color: "white and black",
-        specialSkill: "delivering messages",
+        specialSkill: "delivering messages Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Owl",
     },
 ]
@@ -54,12 +54,12 @@ const buildPetCards = () => {
     let domString = "";
 
     for (let i = 0; i < pets.length; i++) {
-        domString += `<div class="pets">`;
-        domString +=    `<h2>${pets[i].name}</h2>`;
-        domString +=    `<div class="petImg"><img src=${pets[i].image}></div>`;
-        domString +=    `<p1>${pets[i].color}</p1>`;
-        domString +=    `<p2>${pets[i].specialSkill}</p2>`;
-        domString +=    `<p3>${pets[i].typeOfPet}</p3>`;
+        domString += `<div class="pet-card">`;
+        domString +=    `<div id="pet-card-name">${pets[i].name}</div>`;
+        domString +=    `<div id="pet-card-image"><img src=${pets[i].image}></div>`;
+        domString +=    `<div>${pets[i].color}</div>`;
+        domString +=    `<div>${pets[i].specialSkill}</div>`;
+        domString +=    `<div id="pet-card-footer">${pets[i].typeOfPet}</div>`;
         domString += `</div>`;
 
     }

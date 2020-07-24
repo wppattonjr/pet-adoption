@@ -1,36 +1,82 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 15px;
 }
 
-.pets {
+.pet-card-buttons {
+    display: flex;
+    color: white;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+#dog-button {
+    background-color: rgb(129, 236, 129);
+    border: 1px solid rgb(129, 236, 129);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+
+#cat-button {
+    background-color: rgb(252, 221, 82);
+    border: 1px solid rgb(252, 221, 82);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+
+#bird-button {
+    background-color: rgb(100, 237, 247);
+    border: 1px solid rgb(100, 237, 247);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+
+#ferret-button {
+    background-color: rgb(243, 97, 97);
+    border: 1px solid rgb(243, 97, 97);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+
+#rodent-button {
+    background-color: rgb(199, 198, 198);
+    border: 1px solid rgb(199, 198, 198);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+
+.pet-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.pet-card {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+}
+
+#pet-card-name {
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#pet-card-name {
+    border: 3px solid black;
     
 }
 
-.pets {
-    border: 2px solid black;
-    background-color: white;
-    text-align: center;
-    padding: 15px;
-    width: 500px;
-}
-
-.pets .petImg {
-    width: 100px;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-h2 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
+#pet-card-footer {
+    background-color: cornflowerblue;
 }
