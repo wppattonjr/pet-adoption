@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pets {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+}
