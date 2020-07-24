@@ -55,11 +55,11 @@ const buildPetCards = () => {
 
     for (let i = 0; i < pets.length; i++) {
         domString += `<div class="pets">`;
-        domString +=    `<h1>${pets[i].name}</h1>`;
+        domString +=    `<h2>${pets[i].name}</h2>`;
         domString +=    `<div class="petImg"><img src=${pets[i].image}></div>`;
-        domString +=    `<h2>${pets[i].color}</h2>`;
-        domString +=    `<p>${pets[i].specialSkill}</p>`;
-        domString +=    `<p>${pets[i].typeOfPet}</p>`;
+        domString +=    `<p1>${pets[i].color}</p1>`;
+        domString +=    `<p2>${pets[i].specialSkill}</p2>`;
+        domString +=    `<p3>${pets[i].typeOfPet}</p3>`;
         domString += `</div>`;
 
     }
