@@ -13,7 +13,7 @@ const pets  = [
         name: "Apollo",
         color: "brown and white",
         specialSkill: "chillaxin Lucas ipsum dolor sit amet jawa lars bothawui ",
-        typeOfPet: "Boxer Dog",
+        typeOfPet: "Dog",
     },
     {
         image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Gandolf.jpg",
@@ -68,5 +68,3 @@ const buildPetCards = () => {
 }
 
     buildPetCards();
-
-
