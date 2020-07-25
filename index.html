@@ -8,13 +8,16 @@
 </head>
 <body>
     <div class="pet-card-buttons">
-        <button id="dog-button">Dogs</button>
-        <button id="cat-button">Cats</button>
-        <button id="bird-button">Birds</button>
-        <button id="ferret-button">Ferrets</button>
-        <button id="rodent-button">Rodents</button>
-        <button id="all-pets-button">All Pets</button>
+        <button id="dog-button" oneclick="filterSelections('dogs')">Dogs</button>
+        <button id="cat-button" oneclick="filterSelections('cats')">Cats</button>
+        <button id="bird-button" oneclick="filterSelections('birds')">Birds</button>
+        <button id="ferret-button" oneclick="filterSelections('ferets')">Ferrets</button>
+        <button id="rodent-button" oneclick="filterSelections('rodents')">Rodents</button>
+        <button id="all-pets-button" oneclick="filterSelections('all')">All Pets</button>
       </div>
+
+      <div class="filter-container">
+          <div class="filterDiv dogs"></div>
    <!--  <div class="pet-cards"> -->
     <div class="pets" id="pets" ></div>
     
