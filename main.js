@@ -2,42 +2,42 @@
 
 const pets  = [
     {
-        image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Zipper.jpg",
+        image: "pet-adoption-images/Zipper.jpg",
         name: "Zipper",
         color: "brown",
         specialSkill: "stealing socks Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Dog",
     },
     {
-        image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Apollo.jpg",
+        image: "pet-adoption-images/Apollo.jpg",
         name: "Apollo",
         color: "brown and white",
         specialSkill: "chillaxin Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Dog",
     },
     {
-        image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Gandolf.jpg",
+        image: "pet-adoption-images/Gandolf.jpg",
         name: "Gandolf",
         color: "grey",
         specialSkill: "magic Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Cat",
     },
     {
-        image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Scabbers.jpg",
+        image: "pet-adoption-images/Scabbers.jpg",
         name: "Scabbers",
         color: "brownish",
         specialSkill: "turning human Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Rat",
     },
     {
-        image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Smeagol.jpg",
+        image: "pet-adoption-images/Smeagol.jpg",
         name: "Smeagol",
         color: "grey-ish",
         specialSkill: "directions Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Ferret",
     },
     {
-        image: "/Users/wendellpattonjr/workspace/foundations/exercises/pet-adoption-images/Hedwig.jpg",
+        image: "pet-adoption-images/Hedwig.jpg",
         name: "Hedwig",
         color: "white and black",
         specialSkill: "delivering messages Lucas ipsum dolor sit amet jawa lars bothawui ",
