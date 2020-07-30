@@ -4,67 +4,96 @@ const pets  = [
     {
         image: "pet-adoption-images/Zipper.jpg",
         name: "Zipper",
-        color: "brown",
-        specialSkill: "stealing socks Lucas ipsum dolor sit amet jawa lars bothawui ",
+        color: "Brown",
+        specialSkill: "Stealing socks Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Dog",
     },
     {
         image: "pet-adoption-images/Apollo.jpg",
         name: "Apollo",
-        color: "brown and white",
-        specialSkill: "chillaxin Lucas ipsum dolor sit amet jawa lars bothawui ",
+        color: "Brown and white",
+        specialSkill: "Chillaxin Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Dog",
     },
     {
         image: "pet-adoption-images/Gandolf.jpg",
         name: "Gandolf",
-        color: "grey",
-        specialSkill: "magic Lucas ipsum dolor sit amet jawa lars bothawui ",
+        color: "Grey",
+        specialSkill: "Magic Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Cat",
     },
     {
         image: "pet-adoption-images/Scabbers.jpg",
         name: "Scabbers",
-        color: "brownish",
-        specialSkill: "turning human Lucas ipsum dolor sit amet jawa lars bothawui ",
+        color: "Brown-ish",
+        specialSkill: "Turning human Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Rat",
     },
     {
         image: "pet-adoption-images/Smeagol.jpg",
         name: "Smeagol",
-        color: "grey-ish",
-        specialSkill: "directions Lucas ipsum dolor sit amet jawa lars bothawui ",
+        color: "Grey-ish",
+        specialSkill: "Directions Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Ferret",
     },
     {
         image: "pet-adoption-images/Hedwig.jpg",
         name: "Hedwig",
-        color: "white and black",
-        specialSkill: "delivering messages Lucas ipsum dolor sit amet jawa lars bothawui ",
+        color: "White and black",
+        specialSkill: "Delivering messages Lucas ipsum dolor sit amet jawa lars bothawui ",
         typeOfPet: "Owl",
     },
-]
+];
+
+const handleButtonClick = (e) => {
+    const buttonID = e.target.id;
+
+    const selectedPets = [];
+    for (let i = 0; i < pets.length; i++) {
+        if(pets[i].typeOfPet === buttonID) {
+            selectedPets.push(pets[i]);
+        }
+    }
+
+    if (buttonID === 'All' || buttonID === e.currentTarget.id){
+        buildPetCards(pets)
+    }else {
+        buildPetCards(selectedPets);
+    }
+}
 
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
 }
 
-const buildPetCards = () => {
-    let domString = "";
+const buildPetCards = (cardsForPets) => {
+    let domString = '';
 
     for (let i = 0; i < pets.length; i++) {
-        domString += `<div class="pet-card">`;
-        domString +=    `<div id="pet-card-name">${pets[i].name}</div>`;
-        domString +=    `<div id="pet-card-image"><img src=${pets[i].image}></div>`;
-        domString +=    `<div>${pets[i].color}</div>`;
-        domString +=    `<div>${pets[i].specialSkill}</div>`;
-        domString +=    `<div id="pet-card-footer">${pets[i].typeOfPet}</div>`;
-        domString += `</div>`;
-
+        domString += `<div class="card my-2" style="width: 20rem;" id="${i}">
+                            <h1 class="card-header">${cardsForPets[i].name}</h1>
+                            <div class="img-container" style="background-image"><img src=${cardsForPets[i].image}></div>
+                            <p1 class="card-text">${cardsForPets[i].color}</p1>
+                            <p2 class="card-text">${cardsForPets[i].specialSkill}</p2>
+                            <p3 class="card-text">${cardsForPets[i].typeOfPet}</p3>
+                      </div>`
     }
 
     printToDom("pets", domString)
 }
 
-    buildPetCards();
+const buttonEvents = () => {
+
+    document.querySelector('#pet-card-buttons').addEventListener('click', handleButtonClick);
+    
+}
+    
+    const init = () => {
+        buttonEvents();
+        buildPetCards(pets);
+}
+
+init();
+
+    

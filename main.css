@@ -1,90 +1,13 @@
-*{
-    margin: 20px;
-    padding: 15px;
+.img-container {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
 }
 
-.pet-card-buttons {
-    display: flex;
-    color: white;
-    justify-content: center;
-    border-radius: 25px;
-}
-
-#dog-button {
-    background-color: rgb(129, 236, 129);
-    border: 1px solid rgb(129, 236, 129);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 10px;
-}
-
-#cat-button {
-    background-color: rgb(252, 221, 82);
-    border: 1px solid rgb(252, 221, 82);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 10px;
-}
-
-#bird-button {
-    background-color: rgb(100, 237, 247);
-    border: 1px solid rgb(100, 237, 247);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 10px;
-}
-
-#ferret-button {
-    background-color: rgb(243, 97, 97);
-    border: 1px solid rgb(243, 97, 97);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 10px;
-}
-
-#rodent-button {
-    background-color: rgb(199, 198, 198);
-    border: 1px solid rgb(199, 198, 198);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 10px;
-}
-
-#all-pets-button {
-    background-color: rgb(241, 134, 224);
-    border: 1px solid rgb(241, 134, 224);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 10px;
-}
-
-.pet-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.pet-card {
-    border: 2px solid black;
-    border-radius: 25px;
-    background-color: white;
+.card-header {
     text-align: center;
-    display: inline-block;
-    padding: 20px;
-    width: 400px;
 }
 
-#pet-card-name {
-    font-size: larger;
+.card-text {
     text-align: center;
-    font-weight: bolder;
-}
-
-#pet-card-name {
-    border: 3px solid black;
-    
-}
-
-#pet-card-footer {
-    background-color: cornflowerblue;
 }

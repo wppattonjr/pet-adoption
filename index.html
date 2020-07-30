@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="pet-card-buttons">
-        <button id="dog-button" oneclick="filterSelections('dogs')">Dogs</button>
-        <button id="cat-button" oneclick="filterSelections('cats')">Cats</button>
-        <button id="bird-button" oneclick="filterSelections('birds')">Birds</button>
-        <button id="ferret-button" oneclick="filterSelections('ferets')">Ferrets</button>
-        <button id="rodent-button" oneclick="filterSelections('rodents')">Rodents</button>
-        <button id="all-pets-button" oneclick="filterSelections('all')">All Pets</button>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Pet Adoption Agency</h1>
+          <p class="lead">Find a life long furry companion today!!!</p>
+        </div>
       </div>
+    <div class="container mt-text-center">
+        <div id="pet-card-buttons">
+            <button type="button" class="btn btn-primary" id="All">All</button>
+            <button type="button" class="btn btn-primary" id="Dog">Dog</button>
+            <button type="button" class="btn btn-secondary" id="Cat">Cat</button>
+            <button type="button" class="btn btn-success" id="Ferret">Ferret</button>
+            <button type="button" class="btn btn-danger" id="Owl">Owl</button>
+            <button type="button" class="btn btn-danger" id="Rat">Rat</button>
 
-      <div class="filter-container">
-          <div class="filterDiv dogs"></div>
-   <!--  <div class="pet-cards"> -->
-    <div class="pets" id="pets" ></div>
+      </div>
+    <!--  <div class="pet-cards"> -->
+        <div id="pets" class="d-flex flex-wrap justify-content-around" ></div>
     
     
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
