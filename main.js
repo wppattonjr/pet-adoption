@@ -55,6 +55,8 @@ const handleButtonClick = (e) => {
         }
     }
 
+    buildPetCards(selectedPets);
+
     if (buttonID === 'All' || buttonID === e.currentTarget.id){
         buildPetCards(pets)
     }else {
@@ -70,7 +72,7 @@ const printToDom = (divId, textToPrint) => {
 const buildPetCards = (cardsForPets) => {
     let domString = '';
 
-    for (let i = 0; i < pets.length; i++) {
+    for (let i = 0; i < cardsForPets.length; i++) {
         domString += `<div class="card my-2" style="width: 20rem;" id="${i}">
                             <h1 class="card-header">${cardsForPets[i].name}</h1>
                             <div class="img-container" style="background-image"><img src=${cardsForPets[i].image}></div>
@@ -95,5 +97,7 @@ const buttonEvents = () => {
 }
 
 init();
+
+
 
     
