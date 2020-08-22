@@ -55,14 +55,19 @@ const handleButtonClick = (e) => {
         }
     }
 
-    buildPetCards(selectedPets);
-
     if (buttonID === 'All' || buttonID === e.currentTarget.id){
         buildPetCards(pets)
     }else {
         buildPetCards(selectedPets);
     }
 }
+
+ const buttonColors = document.querySelector('#pet-type')
+
+ if (pets.typeOfPet === 'Dog') {
+     buttonColors.style.backgroundColor = "#fff";
+ }
+
 
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
@@ -78,7 +83,7 @@ const buildPetCards = (cardsForPets) => {
                             <div class="img-container" style="background-image"><img src=${cardsForPets[i].image}></div>
                             <p1 class="card-text">${cardsForPets[i].color}</p1>
                             <p2 class="card-text">${cardsForPets[i].specialSkill}</p2>
-                            <p3 class="card-text">${cardsForPets[i].typeOfPet}</p3>
+                            <p3 class="card-text" id="pet-type">${cardsForPets[i].typeOfPet}</p3>
                       </div>`
     }
 
@@ -94,6 +99,7 @@ const buttonEvents = () => {
     const init = () => {
         buttonEvents();
         buildPetCards(pets);
+        buttonColors(typeOfPet);
 }
 
 init();
